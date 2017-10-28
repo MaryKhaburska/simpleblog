@@ -1,24 +1,45 @@
-# README
+    Тестовое задание
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+При решении задания используйте Ruby on Rails.
 
-Things you may want to cover:
+Задание.
 
-* Ruby version
+Реализовать блог с постами разбитыми по категориях. Категории, посты должны создаваться, редактироваться, удаляться всеми пользователями.
 
-* System dependencies
+Должна быть возможность добавить коментарии к уже созданным категориям и постам. Комментарии должны добавляться c помощью Ajax.
 
-* Configuration
+Категория должна иметь поля:
 
-* Database creation
+    name
+    description
 
-* Database initialization
+Пост долже иметь поля:
 
-* How to run the test suite
+    name — required
+    content — required
+    file — максимальный размер 2 Mb
 
-* Services (job queues, cache servers, search engines, etc.)
+Коментарий должен иметь поля:
 
-* Deployment instructions
+    author — required, должно содержать два слова, оба с большой буквы
+    content — required
+    created_at — дата создания, заполняется автоматически
 
-* ...
+Блог должен иметь страницы:
+
+    список категорий постов
+
+    страницы редактирования/создания категори
+    страница категории (список постов категории)
+
+    страница поста
+    страницы редактирования/создания поста
+
+Всю сделанную работу выложить на свой аккаунт в Github.
+
+Пожелания.
+
+    Написание тестов будет плюсом.
+    Использование CSS Bootstrap будет плюсом.
+    Используйте уже готовые gem-ы если есть такая возможность.
+    Использование React.js (в виде single page application или отдельных компонентов) будет плюсом.
